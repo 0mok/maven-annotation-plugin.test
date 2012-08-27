@@ -63,11 +63,17 @@ PROCESSOR PLUGIN
                 <phase>process-test-classes</phase>
                 <configuration>
                         <outputDirectory>${basedir}/src/site</outputDirectory>
-
+                        
+                        <additionalSourceDirectories>
+                            <item>${user.home}/src</item>
+                            <item>./src/main/java</item>
+                            
+                        </additionalSourceDirectories>    
+                        
                         <failOnError>false</failOnError>
                         <processors>
                                 <!-- list of processors to use -->
-                                <processor>org.bsc.maven.processor.test.TESTWikiProcessor</processor>
+                            <processor>org.bsc.maven.plugin.processor.test.TESTWikiProcessor</processor>
                         </processors>
 
                         <options>
