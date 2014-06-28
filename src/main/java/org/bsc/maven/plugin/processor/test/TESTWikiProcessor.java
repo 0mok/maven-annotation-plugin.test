@@ -23,7 +23,7 @@ import javax.tools.StandardLocation;
  * 
  * 
  */
-@SupportedSourceVersion(SourceVersion.RELEASE_6)
+@SupportedSourceVersion(SourceVersion.RELEASE_7)
 @SupportedAnnotationTypes( "*" )
 //@SupportedOptions( {"subfolder", "filepath", "templateUri"})
 //@SupportedAnnotationTypes( {"javax.ws.rs.GET", "javax.ws.rs.PUT", "javax.ws.rs.POST", "javax.ws.rs.DELETE"})
