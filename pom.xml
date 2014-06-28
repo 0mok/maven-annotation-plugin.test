@@ -23,7 +23,7 @@
       <version>4.10</version>
       <scope>test</scope>
     </dependency>
-    
+
   </dependencies>
   
   <inceptionYear>2012</inceptionYear>
@@ -59,6 +59,7 @@ PROCESSOR PLUGIN
             <artifactId>jaxrs-wiki-processor</artifactId>
             <version>1.0-SNAPSHOT</version> 
             </dependency>
+            
         </dependencies>
         <executions>
 
@@ -102,9 +103,8 @@ PROCESSOR PLUGIN
                         <outputDirectory>${basedir}/src/site</outputDirectory>
                         
                         <additionalSourceDirectories>
+                            <item>${basedir}/src/main/java</item>                            
                             <item>${user.home}/src</item>
-                            <item>./src/main/java</item>
-                            
                         </additionalSourceDirectories>    
                         
                         <failOnError>false</failOnError>
